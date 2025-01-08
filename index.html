@@ -8,7 +8,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
         body {
-           /*cursor: none;*/
+           cursor: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
@@ -36,10 +36,10 @@
         }
         #logo {
             position: absolute;
-            top: 2vh;
+            top: 1vh;
             left: 5vw;
             z-index: 100;
-            width: 150px;
+            width: 220px;
             height: auto;
         }
         #title-overlay {
@@ -55,11 +55,11 @@
             text-shadow: black 2px 2px 20px;
         }
         #main-title {
-            font-size: 5rem;
+            font-size: 8rem;
             margin-bottom: 0.5rem;
         }
         #subtitle {
-            font-size: 2rem;
+            font-size: 2.8rem;
         }
         .content-container {
             position: absolute;
@@ -75,17 +75,18 @@
         #white-container {
             position: absolute;
             bottom: 0;
-            width: 100%;
+            width: 98.9%;
             height: 50%;
             background-color: white;
             z-index: 10;
             padding: 10px;
             overflow: hidden;
+            border-radius: 70px 70px 0px 0px;
         }
         .qr-code-img {
             position: absolute;
             top: 418px;  /* Distância do topo */
-            right: 32px;  /* Distância da direita */
+            right: 14px;  /* Distância da direita */
             width: 131px;  /* Tamanho da imagem */
             height: auto;
             z-index: 10;  /* Garante que a imagem fique sobre os outros elementos */
@@ -100,8 +101,8 @@
         }
         .qr-code-img2 {
             position: absolute;
-            top: 87.2%;  /* Distância do topo */
-            right: 12px;  /* Distância da direita */
+            top: 87.3%;  /* Distância do topo */
+            right: -8px;  /* Distância da direita */
             width: 131px;  /* Tamanho da imagem */
             height: auto;
             z-index: 10;  /* Garante que a imagem fique sobre os outros elementos */
@@ -118,7 +119,7 @@
         .qr-code-img3 {
             position: absolute;
             top: 85.5%;  /* Distância do topo */
-            right: 32px;  /* Distância da direita */
+            right: 14px;  /* Distância da direita */
             width: 131px;  /* Tamanho da imagem */
             height: auto;
             z-index: 10;  /* Garante que a imagem fique sobre os outros elementos */
@@ -126,8 +127,8 @@
         }
         .qr-code-img4 {
             position: absolute;
-            top: 85.5%;  /* Distância do topo */
-            right: 32px;  /* Distância da direita */
+            top: 85.6%;  /* Distância do topo */
+            right: 14px;  /* Distância da direita */
             width: 131px;  /* Tamanho da imagem */
             height: auto;
             z-index: 10;  /* Garante que a imagem fique sobre os outros elementos */
@@ -136,7 +137,7 @@
         .arrow-icon {
             position: absolute;
             top: 89.5%;  /* Distância do topo */
-            right: 160px;  /* Distância da direita */
+            right: 140px;  /* Distância da direita */
             width: 38px;  /* Tamanho da imagem */
             height: auto;
             z-index: 10;  /* Garante que a imagem fique sobre os outros elementos */
@@ -152,7 +153,7 @@
         .arrow-icon2 {
             position: absolute;
             top: 95.8%;  /* Distância do topo */
-            right: 140px;  /* Distância da direita */
+            right: 120px;  /* Distância da direita */
             width: 38px;  /* Tamanho da imagem */
             height: auto;
             z-index: 10;  /* Garante que a imagem fique sobre os outros elementos */
@@ -168,7 +169,7 @@
         .arrow-icon3 {
             position: absolute;
             top: 93.8%;  /* Distância do topo */
-            right: 160px;  /* Distância da direita */
+            right: 140px;  /* Distância da direita */
             width: 38px;  /* Tamanho da imagem */
             height: auto;
             z-index: 10;  /* Garante que a imagem fique sobre os outros elementos */
@@ -177,7 +178,7 @@
         .arrow-icon4 {
             position: absolute;
             top: 93.8%;  /* Distância do topo */
-            right: 160px;  /* Distância da direita */
+            right: 140px;  /* Distância da direita */
             width: 38px;  /* Tamanho da imagem */
             height: auto;
             z-index: 10;  /* Garante que a imagem fique sobre os outros elementos */
@@ -187,10 +188,10 @@
         /* Services styles */
         .services-title {
             font-family: "Avenir LT Std", sans-serif;
-            font-size: 4rem;
+            font-size: 4.5rem;
             font-weight: 0;
-            margin-top: 50px;
-            margin-bottom: 60px;
+            margin-top: 40px;
+            margin-bottom: 30px;
         
             color: #0071a0;
             text-align: center;
@@ -214,30 +215,30 @@
             margin-bottom: 20px;
         }
         .icon-container img {
-            width: 100px;
-            height: 100px;
+            width: 130px;
+            height: 130px;
             object-fit: contain;
             margin-bottom: 8px;
         }
         .icon-container:nth-child(3) img {
             width: 850px;
-            height: 85px;
+            height: 115px;
             object-fit: contain;
             margin-bottom: 16px;
             margin-top: 8px;
             transform: scale(1);
         }
         .icon-container:nth-child(4) img {
-            width: 105px;
-            height: 105px;
+            width: 135px;
+            height: 135px;
             object-fit: contain;
             margin-bottom: 12px;
             margin-top: -10px;
             transform: scale(1);
         }
         .icon-container:last-child img {
-            width: 115px;
-            height: 115px;
+            width: 145px;
+            height: 145px;
             object-fit: contain;
             margin-bottom: 3px;
             margin-top: -10px;
@@ -247,10 +248,10 @@
             text-align: center;
             /* Removed min-height: 0 which was causing the issue */
             font-family: "Avenir LT Std", sans-serif;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             font-weight: 600;
             color: #646464;
-            max-width: 180px;
+            max-width: 290px;
             margin: 0 auto;
             /* Added to ensure text is visible */
             position: relative;
@@ -311,7 +312,7 @@
         }
         .card-title,
         .card-description {
-            font-size: 14px;
+            font-size: 15px;
             white-space: normal; /* Permite que o texto quebre em várias linhas */
             margin: 0;
             overflow: hidden;
@@ -324,7 +325,7 @@
             color: rgb(234, 234, 234);
         }
         .card-title {
-            font-size: 14px; /* Tamanho maior para o título */
+            font-size: 16px; /* Tamanho maior para o título */
             font-weight: 800;
             white-space: normal;
             overflow: hidden;
@@ -355,7 +356,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
-            -webkit-line-clamp: 3;
+            -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             margin-top: 0px
         }
@@ -374,7 +375,7 @@
             width: 100%;
             margin-bottom: 20px;
             margin-top: 20px;
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 0;
         }
         #newsPageTitle {
@@ -384,7 +385,7 @@
             width: 100%;
             margin-bottom: 20px;
             margin-top: 20px;
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 0;
         }
         .hidden {
@@ -434,7 +435,7 @@
 
 .more-info {
     position: absolute;
-    right: 142px;
+    right: 120px;
     bottom: 40px;
     color: #000;
     font-size: 1.2rem;
@@ -478,8 +479,8 @@
         }
 
         .current-weather-left img {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             margin-right: 20px;
             animation: swing 3s ease-in-out infinite;
         }
@@ -516,7 +517,7 @@
 
         .current-temp {
             color: #1a1a1a;
-            font-size: 50px;
+            font-size: 80px;
             font-weight: bold;
         }
         
@@ -527,6 +528,7 @@
         
         .weather-details div {
             margin: 4px 0;
+            font-size: 23px;
         }
         
         .current-weather-right {
@@ -535,19 +537,19 @@
         
         .current-weather-right h1 {
             color: #1a1a1a;
-            font-size: 30px;
+            font-size: 50px;
             font-weight: bold;
             margin: 0;
         }
         
         .current-weather-right h2 {
             color: #333;
-            font-size: 20px;
+            font-size: 25px;
             margin: 0;
         }
         
         .current-weather-right h3 {
-            font-size: 18px;
+            font-size: 32px;
             margin: 0;
             color: #666;
         }
@@ -558,7 +560,7 @@
         
         .forecast-container h3 {
             color: #1a1a1a;
-            font-size: 30px;
+            font-size: 42px;
             font-weight: bold;
             text-align: center;
         }
@@ -567,14 +569,14 @@
             color: #333;
             display: flex;
             justify-content: space-around;
-            margin-top: 5vh;
+            margin-top: 0vh;
         }
         
         .forecast-day {
-            color: #333;
+            color: #494949;
             text-align: center;
             font-weight: 600;
-            font-size: 1.2rem;
+            font-size: 1.8rem;
         }
 
         h3 {
@@ -584,10 +586,10 @@
 /* Estilização geral */
 .custom-chart-container {
     position: relative;
-    height: 29vh;
+    height: 20vh;
     margin-top: 0vh;
     border-radius: 8px;
-    padding: 20px;
+    padding: 0px;
     background-color: rgba(255, 255, 255, 0.9);
     font-size: 30px;
     font-weight: 600;
@@ -596,10 +598,9 @@
 }
 
 /* Configuração para gráficos */
-.custom-chart,
-.wind-container {
+.custom-chart {
     position: absolute;
-    top: 100px;
+    top: 70px;
     left: 0;
     right: 0;
     opacity: 0; /* Começa invisível */
@@ -609,6 +610,17 @@
     
 }
 
+.wind-container {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    opacity: 0; /* Começa invisível */
+    visibility: hidden; /* Fora da exibição */
+    transition: opacity 0.5s ease-in-out, visibility 0.5s; /* Transição suave */
+    font-size: 20px;
+    
+}
 .custom-chart.visible,
 .wind-container.visible {
     opacity: 1; /* Torna visível */
@@ -646,8 +658,8 @@
     border-radius: 15px;
     padding: 2vw;
     margin: 5px;
-    width: 140px;
-    height: 140px;
+    width: 90px;
+    height: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -686,7 +698,7 @@
 /* windy mapa */
 .meteo-split-container {
         display: flex;
-        width: 98%;
+        width: 99.9%;
         height: calc(100% - 12.3vh); /* Ajustado para considerar o footer */
         gap: 20px;
         padding: 20px;
@@ -711,7 +723,7 @@
         flex: 1;
         position: relative;
         height: 100%;
-        border-radius: 8px;
+        border-radius: 8px 30px 8px 8px;
         overflow: hidden;
     }
 
@@ -834,7 +846,7 @@
         }
 
         .item-noticia h3 {
-            font-size: 28px;
+            font-size: 30px;
             color: #333;
             margin: 0;
             font-weight: bold;
@@ -846,10 +858,10 @@
         }
 
         .item-noticia p {
-            font-size: 20px;
-            color: #666;
+            font-size: 22px;
+            color: #6c6c6c;
             margin: 0;
-            line-height: 1.6;
+            line-height: 1.3;
             display: -webkit-box;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
@@ -888,7 +900,7 @@
 
         /* THingsboard */
         iframe {
-            width: 98%;
+            width: 99%;
             height: 85%;
             border: none;
             position: absolute;
@@ -1031,7 +1043,7 @@
                         </div>
                         <div class="current-weather-right">
                             <h1>Meteorologia</h1>
-                            <h2>Coimbra - <span id="currentDate"></span></h2>
+                            <h2><span id="currentDate"></span></h2>
                             <h3 id="condition"></h3>
                         </div>
                     </div>
@@ -1080,9 +1092,9 @@
     </div>
         <!-- News Public Content -->
         <div class="content-container hidden" id="termo1-content">
-            <iframe id="iframe1" src="http://localhost/NEWS/termoServer/termo1.php"></iframe>
-            <iframe id="iframe2" src="http://localhost/NEWS/termoServer/termo2.php" class="iframe-hidden"></iframe>
-            <iframe id="iframe3" src="http://localhost/NEWS/termoServer/termo3.php" class="iframe-hidden"></iframe>
+            <iframe id="iframe1" src="http://localhost/Code/termo1.php"></iframe>
+            <iframe id="iframe2" src="http://localhost/Code/termo2.php" class="iframe-hidden"></iframe>
+            <iframe id="iframe3" src="http://localhost/Code/termo3.php" class="iframe-hidden"></iframe>
             <iframe id="iframe4" src="https://thingsboard.itecons.pt/dashboard/872c0570-abee-11ef-a0ee-df46eee9b5b2?publicId=1eebd130-213f-11ec-9eee-c9c8a19bf12b" class="iframe-hidden"></iframe>
             <iframe id="iframe5" src="https://thingsboard.itecons.pt/dashboard/2485b1f0-ace3-11ef-a0ee-df46eee9b5b2?publicId=1eebd130-213f-11ec-9eee-c9c8a19bf12b" class="iframe-hidden"></iframe>
             <img src="https://github.com/DGitecons/arrow_Icons/blob/main/arrow_top.png?raw=true" alt="Seta" class="arrow-icon4">
@@ -1261,7 +1273,7 @@ function stopTermoUpdates() {
 
                     for (let i = 0; i < items.length; i++) {
                         const titulo = items[i].getElementsByTagName("title")[0]?.textContent || "Título não disponível";
-                        const descricao = items[i].getElementsByTagName("description")[0]?.textContent || "Descrição não disponível";
+                        const descricao = items[i].getElementsByTagName("description")[0]?.textContent || "";
                         const urlImagem = items[i].getElementsByTagName("enclosure")[0]?.getAttribute("url");
                         const tipoImagem = items[i].getElementsByTagName("enclosure")[0]?.getAttribute("type");
                         
@@ -1395,7 +1407,7 @@ function stopTermoUpdates() {
         document.getElementById('termo1-content')
     ];
 
-    const durations = [2000, 2000, 2000, 9000, 12000, 75000]; // Tempos em milissegundos para cada seção
+    const durations = [20000, 20000, 20000, 90000, 120000, 75000]; // Tempos em milissegundos para cada seção
 
     let currentVisibleIndex = sections.findIndex(section => section.classList.contains('visible'));
     const nextIndex = (currentVisibleIndex + 1) % sections.length;
@@ -1588,7 +1600,7 @@ function initializeContent() {
     }, 1000);
 
     // Start the toggle cycle
-    toggleContent.timeout = setTimeout(toggleContent, 2000);
+    toggleContent.timeout = setTimeout(toggleContent, 20000);
 }
 
 // Call initialization when the page loads
@@ -1621,14 +1633,15 @@ function changeLayer() {
     currentLayerIndex = (currentLayerIndex + 1) % layers.length;
     const layer = layers[currentLayerIndex];
     iframe.style.transform = 'translateY(100%)'; // Move para fora da tela antes de trocar o conteúdo
-    iframe.src = `https://embed.windy.com/embed2.html?lat=39.3999&lon=-8.2245&zoom=6&level=surface&overlay=${layer}&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&detailLat=&detailLon=&metricWind=default&metricTemp=default&radarRange=-1&play=true`;
+
+    // Troca a camada e recarrega o iframe
+    iframe.src = `https://embed.windy.com/embed2.html?lat=39.3999&lon=-8.2245&zoom=6&level=surface&overlay=${layer}&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&detailLat=&detailLon=&metricRain=mm&metricWind=km/h&metricTemp=°C&radarRange=-1&message=true&play=true`;
+
+    // Aplica o efeito de transição somente após o iframe ser recarregado
+    iframe.onload = () => {
+        iframe.style.transform = 'translateY(0)'; // Move o iframe de volta para sua posição original
+    };
 }
-
-// Evento para aplicar o efeito "desvendar" quando o iframe termina de carregar
-iframe.addEventListener('load', () => {
-    iframe.style.transform = 'translateY(0)'; // Move o iframe de volta para sua posição original
-});
-
 
 
 //video    
@@ -1713,7 +1726,8 @@ iframe.addEventListener('load', () => {
 // Função para carregar e atualizar eventos
 async function loadEvents() {
     try {
-        const response = await fetch('itecons_next.json');
+        // URL do arquivo JSON
+        const response = await fetch('https://raw.githubusercontent.com/DGitecons/next-itecons-rss/refs/heads/main/data.json');
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -1726,19 +1740,19 @@ async function loadEvents() {
         container.innerHTML = '';
 
         // Atualiza o título da página com o título do JSON
-        pageTitle.textContent = data.title;
+        pageTitle.textContent = "Próximos Eventos";
 
-                // Itera pelos eventos
-        data.events.slice(0, 5).forEach(event => {
+        // Itera pelos eventos
+        data.forEach(event => {
             const eventCard = document.createElement('div');
             eventCard.className = 'event-card';
             eventCard.innerHTML = `
                 <div class="card">
                     <div class="event-date">${event.date}</div>
-                    <img src="${event.img}" class="card-img-top" alt="Event Image">
+                    <img src="${event.image_url}" class="card-img-top" alt="Event Image">
                     <div class="card-body">
                         <div class="card-text-container">
-                            <h5 class="card-title">${event.subtitle}</h5>
+                            <h5 class="card-title">${event.title}</h5>
                             <p class="card-description">${event.description}</p>
                         </div>
                     </div>
@@ -1753,10 +1767,17 @@ async function loadEvents() {
     }
 }
 
+// Carregar eventos ao abrir a página
+document.addEventListener('DOMContentLoaded', loadEvents);
+
+// Atualizar eventos a cada 5 minutos (300000 milissegundos)
+setInterval(loadEvents, 300000);
+
 // Função para carregar e atualizar notícias
 async function loadNews() {
     try {
-        const response = await fetch('itecons_news.json');
+        // URL do arquivo JSON
+        const response = await fetch('https://raw.githubusercontent.com/DGitecons/news-itecons-rss/refs/heads/main/data.json');
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -1768,8 +1789,10 @@ async function loadNews() {
         // Limpa o contêiner antes de adicionar novas notícias
         container.innerHTML = '';
 
+        // Atualiza o título da página
         pageTitle.textContent = 'Notícias';
 
+        // Itera pelos artigos e cria os cards
         newsData.slice(0, 5).forEach(newsItem => {
             const newsCard = document.createElement('div');
             newsCard.className = 'event-card';
@@ -1787,22 +1810,17 @@ async function loadNews() {
             container.appendChild(newsCard);
         });
     } catch (error) {
-        console.error('Detailed error loading news:', error);
+        console.error('Erro ao carregar notícias:', error);
         const container = document.getElementById('newsContainer');
-        container.innerHTML = `<div class="alert alert-danger">Error loading news: ${error.message}</div>`;
+        container.innerHTML = '<div class="alert alert-danger">Erro ao carregar notícias</div>';
     }
 }
 
-// Função para carregar todos os conteúdos
-async function loadAllContent() {
-    await Promise.all([loadEvents(), loadNews()]);
-}
+// Carregar notícias ao abrir a página
+document.addEventListener('DOMContentLoaded', loadNews);
 
-// Carregar conteúdo inicialmente
-loadAllContent();
-
-// Atualizar conteúdo a cada 5 minutos (300000 milissegundos)
-setInterval(loadAllContent, 20000);
+// Atualizar notícias a cada 5 minutos (300000 milissegundos)
+setInterval(loadNews, 300000);
 
 // Adicionar event listener para atualização manual (opcional)
 document.addEventListener('DOMContentLoaded', () => {
@@ -1814,43 +1832,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Add this to the existing <script> section in the HTML
     function createElaboratedClock() {
-        const clockContainer = document.createElement('div');
-        clockContainer.id = 'elaborated-digital-clock';
-        clockContainer.style.position = 'absolute';
-        clockContainer.style.top = '16px';
-        clockContainer.style.right = '20px';
-        clockContainer.style.display = 'flex';
-        clockContainer.style.alignItems = 'center';
-        clockContainer.style.backgroundColor = 'transparent';
-        clockContainer.style.padding = '10px';
-        clockContainer.style.borderRadius = '10px';
-        clockContainer.style.fontFamily = '"Avenir LT Std", sans-serif';
-        clockContainer.style.color = 'white';
-        clockContainer.style.zIndex = '110';
+    const clockContainer = document.createElement('div');
+    clockContainer.id = 'elaborated-digital-clock';
+    clockContainer.style.position = 'absolute';
+    clockContainer.style.top = '16px';
+    clockContainer.style.right = '20px';
+    clockContainer.style.display = 'flex';
+    clockContainer.style.alignItems = 'center';
+    clockContainer.style.backgroundColor = 'transparent';
+    clockContainer.style.padding = '10px';
+    clockContainer.style.borderRadius = '10px';
+    clockContainer.style.fontFamily = '"Avenir LT Std", sans-serif';
+    clockContainer.style.color = 'white';
+    clockContainer.style.zIndex = '110';
 
-        const dateElement = document.createElement('div');
-        dateElement.id = 'clock-date';
-        dateElement.style.marginRight = '15px';
-        dateElement.style.fontSize = '1.3rem';
-        dateElement.style.minWidth = '250px';  // Ensure consistent width
-        dateElement.style.textAlign = 'right'; // Align text to right for consistent positioning
+    const dateElement = document.createElement('div');
+    dateElement.id = 'clock-date';
+    dateElement.style.marginRight = '15px';
+    dateElement.style.fontSize = '2.2rem';
+    dateElement.style.minWidth = '250px'; // Ensure consistent width
+    dateElement.style.textAlign = 'right'; // Align text to right for consistent positioning
 
-        const separatorElement = document.createElement('div');
-        separatorElement.style.width = '3px';
-        separatorElement.style.height = '40px';
-        separatorElement.style.borderRadius = '40px';
-        separatorElement.style.backgroundColor = 'white';
-        separatorElement.style.position = 'absolute';
-        separatorElement.style.left = '63.4%';
-        separatorElement.style.transform = 'translateX(-50%)';
-        separatorElement.style.top = '6px';
+    const separatorElement = document.createElement('div');
+    separatorElement.style.width = '4px';
+    separatorElement.style.height = '50px';
+    separatorElement.style.borderRadius = '40px';
+    separatorElement.style.backgroundColor = 'white';
+    separatorElement.style.position = 'absolute';
+    separatorElement.style.left = '60%';
+    separatorElement.style.transform = 'translateX(-50%)';
+    separatorElement.style.top = '6px';
 
-        const timeElement = document.createElement('div');
-        timeElement.id = 'clock-time';
-        timeElement.style.fontSize = '1.8rem';
-        timeElement.style.fontWeight = 'bold';
-        timeElement.style.display = 'flex';
-        timeElement.style.minWidth = '140px';
+    const timeElement = document.createElement('div');
+    timeElement.id = 'clock-time';
+    timeElement.style.fontSize = '2.3rem';
+    timeElement.style.fontWeight = 'bold';
+    timeElement.style.display = 'flex';
+    timeElement.style.minWidth = '140px'; // Fixed width for consistent layout
+    timeElement.style.fontFamily = 'monospace'; // Use monospaced font for equal-width digits
+
     clockContainer.appendChild(dateElement);
     clockContainer.appendChild(separatorElement);
     clockContainer.appendChild(timeElement);
@@ -1883,6 +1903,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Call the function to create and start the clock
 createElaboratedClock();
+
 
 let precipitationChart = null;
         let temperatureChart = null;
